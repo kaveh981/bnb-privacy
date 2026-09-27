@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>bnb-local — Privacy and data deletion</title>
+    <style>
+      body {
+        margin: 0;
+        background: #f7f8fa;
+        color: #202938;
+        font:
+          17px/1.65 system-ui,
+          sans-serif;
+      }
+      main {
+        max-width: 760px;
+        margin: 48px auto;
+        padding: 36px;
+        background: white;
+        border-radius: 16px;
+      }
+      h1,
+      h2 {
+        line-height: 1.25;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      h2 {
+        margin-top: 32px;
+        font-size: 1.2rem;
+      }
+      .notice {
+        padding: 12px 16px;
+        background: #fff3ce;
+        border-radius: 8px;
+      }
+      @media (max-width: 600px) {
+        main {
+          margin: 0;
+          padding: 24px;
+          border-radius: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p>Kaveh Stays · bnb-local</p>
+      <h1>Privacy and data deletion</h1>
+
+      <p>Effective 27 September 2026</p>
+      <p>
+        bnb-local is a private guest-communication assistant used by the host of
+        Kaveh Stays to manage accommodation enquiries and prepare replies. This
+        notice describes the information processed by the assistant.
+      </p>
+      <h2>Information processed</h2>
+      <p>
+        The assistant may process guest names, contact and messaging
+        identifiers, messages, reservation details, stay dates, communication
+        preferences, and property information. It stores message source
+        references and relevant original notification or webhook content so the
+        host can understand where information came from.
+      </p>
+      <p>
+        Sources may include information entered by the host, property calendars,
+        Airbnb-related notification emails from a connected Gmail account, and
+        messages delivered to a connected WhatsApp Business Platform number.
+        Gmail access is read-only; the app filters imports to Airbnb-related
+        messages. Connecting a source does not import an entire WhatsApp chat
+        history.
+      </p>
+      <h2>How information is used</h2>
+      <p>
+        Information is used to understand guest requests, check availability,
+        prepare reply suggestions, and let the host review and correct them.
+        Suggested replies and final corrections may be retained for comparison
+        and evaluation. The current application does not send replies
+        automatically or automatically train a model on corrections.
+      </p>
+      <h2>Storage and service providers</h2>
+      <p>
+        The host stores imported information and reply records in a local
+        database. Credentials are stored separately in local configuration and
+        credential files. These files are excluded from the project's source
+        repository. Local storage is not encrypted by the application;
+        protection also depends on the host's device and backup security.
+      </p>
+      <p>
+        Google, Airbnb, and Meta process information through their respective
+        services. WhatsApp webhook traffic may pass through Cloudflare to reach
+        the host's local receiver. The public policy page does not provide
+        access to the assistant or its guest records.
+      </p>
+      <p>
+        If the host enables OpenAI draft generation, selected guest messages and
+        relevant conversation, booking, property, and communication-style
+        context are sent to OpenAI to generate a draft. Demo mode does not make
+        these AI requests. The app requests that generated responses not be
+        stored through the API's response-storage option; provider processing
+        and retention remain subject to that provider's policies and the host's
+        account settings.
+      </p>
+      <h2>Retention</h2>
+      <p>
+        The current application has no automatic retention deadline. Imported
+        messages, drafts, corrections, and evaluation records remain on the
+        host's device until the host deletes them. Disconnecting an integration
+        stops future access but does not itself remove previously imported
+        records. Copies may also exist in host-managed backups or the original
+        messaging services.
+      </p>
+      <h2 id="deletion">Contact and deletion requests</h2>
+      <p>
+        To ask about your information or request access, correction, or deletion
+        from bnb-local, contact the Kaveh Stays host through your existing
+        booking conversation or the WhatsApp conversation you use with the host.
+        Mention “bnb-local data request” and provide enough information to
+        identify the relevant booking or conversation. Do not send passwords or
+        identity documents.
+      </p>
+      <p>
+        The host may ask for proportionate verification before acting on a
+        request. Deletion is handled manually and covers applicable local
+        message records, related drafts and evaluation records, and
+        host-controlled backup copies where practicable. Any information that
+        must be retained for booking administration or applicable obligations,
+        and any limits on deletion, will be explained in the response. Deleting
+        information from bnb-local does not automatically delete the original
+        messages held by Airbnb, Google, or Meta.
+      </p>
+      <h2>Changes</h2>
+      <p>
+        This notice should be updated before enabling materially different
+        sources, processing, or sharing. The published version will show its
+        effective date.
+      </p>
+    </main>
+  </body>
+</html>
